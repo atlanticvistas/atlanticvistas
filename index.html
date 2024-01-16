@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atlantic Vistas | West Cork Holiday Home</title>
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <link rel="icon" sizes="72x72" href="images/favicon.png">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fadein.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="site_name" property="og:site_name" content="Atlantic Vistas">
+        <meta property="og:title" content="Atlantic Vistas | West Cork Holiday Home">
+        <meta name="description" content="Atlantic Vistas is a delightful holiday home in West Cork, with spectacular views of the Wild Atlantic Way, with easy access to the best tourist attractions and towns in West Cork.">
+        <meta property="og:description" content="Atlantic Vistas is a delightful holiday home in West Cork, with spectacular views of the Wild Atlantic Way, with easy access to the best tourist attractions and towns in West Cork.">
+        <meta property="og:image" content="http://atlanticvistas.ie/images/tile.jpg">
+        <meta property="og:image:alt" content="Atlantic Vistas is a delightful holiday home in West Cork, with spectacular views of the Wild Atlantic Way, with easy access to the best tourist attractions and towns in West Cork." />
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:url" content="https://atlanticvistas.ie">
+        <meta name="theme-color" content="#FFC52B">
+    </head>
+
+<body class="light-background">
+
+    <div class="block-white block-full container-short" id="top">
+       
+        
+        <div class="home-text">
+            
+            <div class="container-short">
+                <img class="heroFade" src="/images/atlantic-vistas-wordmark-black.svg" alt="" style="width: 60vw; display: block; max-width: 600px;">
+                <h1 class="heroFadeUp">Discover your West Cork Holiday Home</h1>
+                <h2 class="heroFadeUp">Website coming soon!</h2>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+        <div class="copyright">
+            <p>© Atlantic Vistas</p>
+            <p>Designed with ❤ by <a href="www.paprika.ie" style="text-decoration: underline;">Paprika Creative</a></p>
+        </div>
+
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/fadein.js"></script>
+    <script src="js/lite-yt-embed.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+<script>
+    $('#menuToggle li a').on('click', function(){
+        $('.menuToggle input[name="menuTog"]').prop('checked', false);
+    });
+</script>
+
+<script>
+    const accordionBtns = document.querySelectorAll(".accordion");
+    
+    accordionBtns.forEach((accordion) => {
+      accordion.onclick = function () {
+        this.classList.toggle("is-open");
+    
+        let content = this.nextElementSibling;
+        console.log(content);
+    
+        if (content.style.maxHeight) {
+          //this is if the accordion is open
+          content.style.maxHeight = null;
+        } else {
+          //if the accordion is currently closed
+          content.style.maxHeight = content.scrollHeight + "px";
+          console.log(content.style.maxHeight);
+        }
+      };
+    });</script>
+
+    <script>
+        $(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+            arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+            tPrev: 'Previous (Left arrow key)', // title for left button
+            tNext: 'Next (Right arrow key)', // title for right button
+		},
+        
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>Atlantic Vistas</small>';
+			}
+		}
+        
+	});
+});
+    </script>
+
+</body>
+
+
+
+</html>
