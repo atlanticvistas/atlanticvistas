@@ -100,3 +100,15 @@ transform: translate(0, 0);
   opacity: 1;
   transform: translate(0, 0); 
 }
+
+.heroShapeFade {
+  animation: heroShapeFade 3s;
+  overflow: hidden;
+}
+
+@keyframes heroShapeFade {
+  0% {clip-path: inset(50% 50% 50% 50% round 20%);}
+  20% {clip-path: inset(48% 35% 48% 35% round 20%);}
+  80% {clip-path: inset(0 0 0 0 round 18%);}
+  100% {clip-path: inset(0 0 0 0 round 0%);}
+}
