@@ -1630,17 +1630,6 @@ button.accordion {
         box-shadow: none;
     }
 
-    .hero-image-template-alt {
-        display: block;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        background-position: center;
-        text-align: center;
-        top: 0;
-        max-width: 100%;
-    }
-
     .hero-image-container {
         height: 100vh;
     }
